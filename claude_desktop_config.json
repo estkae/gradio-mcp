@@ -1,0 +1,12 @@
+{
+  "gradio-projectile": {
+    "command": "python",
+    "args": ["C:/Users/kae/source/repos/gradio-mcp/app1_hybrid.py"],
+    "env": {}
+  },
+  "gradio-ui": {
+    "command": "python",
+    "args": ["C:/Users/kae/source/repos/gradio-mcp/start_gradio_public.py"],
+    "env": {}
+  }
+}

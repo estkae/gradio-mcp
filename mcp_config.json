@@ -1,0 +1,30 @@
+{
+  "name": "gradio-projectile",
+  "description": "Gradio-MCP Projektil-Berechnung",
+  "schema_version": "1.0",
+  "command": {
+    "windows": "python",
+    "args": ["app1_hybrid.py"]
+  },
+  "env": {},
+  "tool_config": {
+    "tools": [{
+      "name": "calculate_projectile",
+      "description": "Berechnet die Flugweite eines Projektils basierend auf Anfangsgeschwindigkeit und Abwurfwinkel",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "initial_speed": {
+            "type": "number",
+            "description": "Anfangsgeschwindigkeit in m/s"
+          },
+          "angle": {
+            "type": "number",
+            "description": "Abwurfwinkel in Grad (0-90)"
+          }
+        },
+        "required": ["initial_speed", "angle"]
+      }
+    }]
+  }
+}
